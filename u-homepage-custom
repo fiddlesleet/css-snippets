@@ -1,0 +1,311 @@
+/* Mobile & tablet styles*/
+@media only screen and (max-width: 980px) {
+  .adjust-row-size {
+ 	 width: 90% !important;
+  }
+  .partner-logo {
+  	width: 70% !important;
+	}
+  #att-logo {
+    margin-top: -30%;
+  }
+  #mercedes-logo {
+    margin-top: 10%;
+    width: 85% !important;
+  }
+  .nanodegree-touch-slider {
+    grid-template-columns: repeat(13, 70%) !important;
+  }
+  .center-on-mobile-tablet {
+    text-align: center !important;
+  }
+  /* Center buttons on mobile and tablet */
+  .btn-inline {
+    text-align: center !important;
+  }
+}
+/* Mobile styles */
+@media only screen and (max-width: 481px) {
+  .nanodegree-touch-slider {
+    grid-template-columns: repeat(13, 90%) !important;
+  }
+}
+/* Slider dots */
+.hero-slider .et_pb_slider .et-pb-controllers a {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #cecece;
+  background-color: rgba(0,0,0,0);
+}
+
+/* Set active slide dot to blue*/
+.hero-slider .et_pb_slider .et-pb-active-control {
+  background-color: #cecece !important;
+}
+
+/* End slider dots*/
+
+.hero-slider h1, .hero-slider p, .hero-slider a {
+  text-shadow: rgba(0, 0, 0, 0.5) 0 2px 10px;
+}
+
+.hero-slider .et_pb_slide_title {
+  text-shadow: none !important;
+  opacity: 0 !important;
+}
+
+#home-slider .et_pb_slide_title,  #home-slider h1, #mobile-slider h1, .hero-slider h1 {
+  font-family: balboa-extra-condensed, sans-serif;
+	font-weight: 400;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero-slider p, .hero-slider a {
+  color: #fff !important;
+  text-transform: capitalize;
+}
+
+#desktop-hero-slider {
+  text-align: left;
+}
+
+#desktop-hero-slider h1 {
+  font-size: 118px;
+  line-height: 108px;
+  left: 0;
+}
+
+#desktop-hero-slider p, #desktop-hero-slider a {
+	font-size: 24px;
+}
+
+#mobile-hero-slider h1, #mobile-hero-slider p, #mobile-hero-slider a  {
+  text-align: center;
+}
+
+#mobile-hero-slider h1 {
+  font-size: 48px;
+  line-height: 55px;
+}
+
+#mobile-hero-slider p, #mobile-hero-slider a {
+	font-size: 18px;
+}
+
+/* Schools header title */
+.schools-header-title {
+  font-size: 1.4rem;
+  font-weight: 700 !important;
+  padding: 0 4rem;
+  line-height: 1.6em;
+}
+
+/* Decorative horizontal lines around header */
+hero-cards__header__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0 4rem;
+	color: #2e3d49;
+}
+
+.horiz-lines h1 {
+  font: 30px Arial;
+  font-weight: normal; 
+  text-align: center !important;
+  position: relative;
+}
+
+.horiz-lines h1 span {
+  background: #fff; 
+  margin-right: 0%;
+  padding: 0 20px;
+}
+
+.horiz-lines h1:before {
+  content: "";
+  width: 100%;
+  left: 0;
+  top: 50%;
+  margin-top: -4px;
+  position: absolute;
+  z-index: -1;
+  height: 0;
+  border-top: 2px double rgb(174,189,202); }
+
+#testimonial-slider h3, .student-stories-slider h3, .testimonial-card h3 {
+  font-weight: bold;
+  color: #02b3e4 !important;
+}
+
+.testimonial-card h5 {
+  font-style: italic;
+}
+
+#testimonial-slider h6, .testimonial-card h6 {
+  color: black;
+  letter-spacing: 2px;
+}
+
+#testimonial-slider .et_pb_slide_image img {
+    margin-top: 0px;
+    margin-left: 0px;
+    max-height: 100% !important;
+}
+#testimonial-slider .et_pb_slide {
+    padding-left: 0px;
+} 
+ 
+/* Nanodegree card font styling */
+.nanodegree-card h1 {
+ 	font-size: 1rem;
+  font-weight: 700; 
+  margin: 0.2rem 0;
+  line-height: 1.5em;
+
+}
+
+.nanodegree-card h2 {
+  font-size: 0.8rem;
+  font-weight: 300;
+ 	line-height: 1.4em;
+ 	padding-top: 0.2rem;
+  height: auto;
+  width: auto;
+}
+
+.nanodegree-card h3 {
+  font-size: 0.9em;
+}
+
+.nanodegree-card h4, .nanodegree-card h3 {
+  display: inline;
+}
+
+.nanodegree-card h5 span {
+  background-color: #fff; 
+  font-size: 0.6rem !important;
+  color: #02b3e4 !important; 
+  text-transform: uppercase; 
+  letter-spacing: 0.1em;
+  font-weight:600; 
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  padding: 0pt 5pt 0pt 5pt !important;
+  border-radius: 2px;
+} 
+
+.nanodegree-card h6 {
+	font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.nanodegree-card hr {
+  width: 8.3%;
+  margin-right: 100%;
+  margin-bottom: 0.8em;
+  margin-top: 0.0em;
+}
+
+/* 
+*
+* HOVER EFFECTS 
+*
+*/
+
+/* Hide before hover */
+
+/* Show Learn More on hover */
+.nanodegree-card:hover .learn-more {
+	font-size: 0.96em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: right;  
+}
+
+/* Show before hover */
+.nanodegree-card .school-info, .nanodegree-card h6, .nanodegree-card hr  {
+  opacity: 1;
+}
+
+/* Hide on hover */
+.nanodegree-card:hover .school-info, .nanodegree-card:hover h6, .nanodegree-card:hover hr  {
+  opacity: 0;
+}
+
+/* Hide before hover */
+.nanodegree-card h2, .nanodegree-card .learn-more {
+  opacity: 0;
+}
+
+/* Show on hover */
+.nanodegree-card:hover h2, .nanodegree-card:hover .learn-more {
+  opacity: 1;
+}
+
+/* Style gap between cards */
+.nanodegree-touch-slider .et_pb_text {
+  margin-right: 3% !important;
+  margin-left: 3% !important;
+  padding:0.8rem !important;
+}
+
+
+/* 
+*
+* HOVER EFFECTS 
+*
+*/
+/* Smooth transitions for all cards */
+.nanodegree-card {
+  transition: all 500ms ease-in-out;
+}
+
+/* testionials slider: section of sliding rows */
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  /* Smooth scroll */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* School card titles */
+.card-cute__title {
+	font-size: 1.1rem;
+	font-weight: 700;
+	line-height: 1.4em;
+}
+
+/* mobile stacking */
+@media (max-width: 980px) {
+.flex-columns .et_pb_row {
+  display: flex; }
+.flex-columns.twobytwo .et_pb_row {
+  display: flex; }
+.flex-columns.twobytwo .et_pb_row {
+  flex-wrap: wrap; }
+.flex-columns.twobytwo .et_pb_row .et_pb_column {
+  width: 50% !important; } 
+}
+@media (max-width: 479px) {
+.flex-columns.twobytwo .et_pb_row {
+  flex-wrap: wrap; } 
+.flex-columns.twobytwo .et_pb_row .et_pb_column {
+  width: 50% !important; }
+}
+
+/* inline buttons for mobile fullwidth;*/
+@media only screen and (max-width: 650px) {
+.et_pb_fullwidth_header .et_pb_fullwidth_header_container .et_pb_button_two {
+margin-left: 0;
+}
+}
+
+/* inline buttons for mobile banner;  used in "right path banner" */
+.btn-inline .et_pb_button_module_wrapper {
+    display: inline-block;
+    margin: 0 5px;
+}
