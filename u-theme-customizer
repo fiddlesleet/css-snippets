@@ -4,56 +4,9 @@
  * 
  * */
 
-/* Navbar font format */
-/* this styles the navbar links as a whole */
-#top-menu li a, .et-fixed-header #top-menu li a  {
-	font-size: 0.8175rem;
-	font-weight: 400;
-	color: #525c5c;
-}
-
-/* Submenu hover color is black */
-/* this styles the submenus */
-#top-menu .sub-menu {
-	/* round dropdown corners */
-  border-radius: 2px;
-	padding: 12px 0px;
-}
-
-/* this styles the submenu links */
-#top-menu .sub-menu a {
-	line-height: 1.8em;
-	padding: 5px 10px;
-}
-
-#top-menu .sub-menu a:hover {
-	opacity: 1 !important;
-	color: #000 !important;
-}
-
-/* Subsubmenu hover color is Udacity blue */
-/* this styles the subsubmenu */
-#main-header .sub-menu .sub-menu {
-	background-color: #fff;
-	/*width: 275px;*/
-	box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
-	/* Change top border color */
-	border-top: 3px solid #fff; 
-}
-
-/* this styles the subsubmenu's links */
-#top-menu .sub-menu .sub-menu a {
-	padding-right: 0% !important;
-	margin: 0 !important;
-}
-
-#top-menu .sub-menu .sub-menu a:hover {
-	color: #02b3e4 !important;
-}
-
 /* In Explore subsubmenu, style Nanodegree labels */
-#top-menu .menu-nanodegree-header a, .et-fixed-header #top-menu .menu-nanodegree-header a {
-	font-size: .6625rem;
+.menu-nanodegree-header a {
+	font-size: .6625rem !important;
   letter-spacing: .125rem;       text-transform: uppercase;
   font-weight: 600;
 }	
@@ -72,11 +25,62 @@
 
 /*
  * 
- * STYLE BUTTONS ON 
- * DESKTOP NAV
+ * DESKTOP NAVBAR STYLES
  * 
+ * */
+@media (min-width: 980px) {
+/* Navbar font format */
+/* this styles the navbar links as a whole */
+#top-menu li a, .et-fixed-header #top-menu li a  {
+	font-size: 0.8175rem;
+	font-weight: 400;
+	color: #525c5c;
+}
+
+/* this styles the submenus */
+#top-menu .sub-menu {
+	/* round dropdown corners */
+  border-radius: 2px;
+	padding: 12px 0px;
+}
+
+/* this styles the submenu links */
+#top-menu .sub-menu a {
+	line-height: 1.8em;
+	padding: 5px 10px;
+}
+	
+/* Submenu hover color is black */
+#top-menu .sub-menu a:hover {
+	opacity: 1 !important;
+	color: #000 !important;
+}
+	
+/* this styles the subsubmenu */
+#main-header .sub-menu .sub-menu {
+	background-color: #fff;
+	/*width: 275px;*/
+	box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+	/* Change top border color */
+	border-top: 3px solid #fff; 
+}
+
+/* this styles the subsubmenu's links */
+#top-menu .sub-menu .sub-menu a {
+	padding-right: 0% !important;
+	margin: 0 !important;
+}
+
+/* Subsubmenu hover color is Udacity blue */
+#top-menu .sub-menu .sub-menu a:hover {
+	color: #02b3e4 !important;
+}
+
+/*
+ * STYLE BUTTONS IN 
+ * DESKTOP NAV
 */
-@media only screen and (min-width: 980px) {
+
 /* Style blue button */
 .nav-blue-btn a {
   color: white !important;
@@ -117,6 +121,7 @@
 	box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.35);
 }
 }
+
 /*
  * 
  * MOBILE MENU STYLES
@@ -126,7 +131,7 @@
 /* Different mobile logo */
 @media (max-width: 980px) {
  .et_show_nav #logo {
- content: url('/wp-content/uploads/2019/04/udacity-white-logo-mobile-1.png') !important;
+ content: url('/wp-content/uploads/2019/04/udacity.svg') !important;
  }
  header#main-header {
  padding-top: 0px !important;
@@ -252,7 +257,7 @@ background: #ffffff;
 
 
 /* Keep columns instead of stacking on mobile + tablet */
-@media only screen and (max-width: 980px) {
+@media (max-width: 980px) {
  
 .two-columns .et_pb_column {
 width: 50%!important;
@@ -262,6 +267,20 @@ width: 50%!important;
 width: 33.33%!important;
 }
  
+.four-columns .et_pb_column {
+width: 22%!important;
+}
+}
+
+@media (max-width: 481px) {
+	.two-columns .et_pb_column {
+width: 50%!important;
+}
+ 
+.three-columns .et_pb_column {
+width: 33.33%!important;
+}
+	
 .four-columns .et_pb_column {
 width: 25%!important;
 }
@@ -388,7 +407,7 @@ text-decoration-color: #02b3e4;
 }*/
 
 /* inline buttons for mobile fullwidth;*/
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
 .et_pb_fullwidth_header .et_pb_fullwidth_header_container .et_pb_button_two {
 margin-left: 0;
 }
@@ -424,4 +443,12 @@ margin-left: 0;
 	padding-left: 5px;
 	position:relative;
 	font-family: 'ETmodules';
+}
+
+
+/* Center buttons row of 2 buttons on mobile and tablet */
+@media (max-width: 980px) {
+  .btn-inline .et_pb_button {
+    text-align: center !important;
+  }
 }
