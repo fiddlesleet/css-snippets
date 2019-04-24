@@ -1,5 +1,130 @@
+/*
+ * 
+ * NAVIGATION BAR STYLES
+ * 
+ * */
+
+/* Navbar font format */
+/* this styles the navbar links as a whole */
+#top-menu li a, .et-fixed-header #top-menu li a  {
+	font-size: 0.8175rem;
+	font-weight: 400;
+	color: #525c5c;
+}
+
+/* Submenu hover color is black */
+/* this styles the submenus */
+#top-menu .sub-menu {
+	/* round dropdown corners */
+  border-radius: 2px;
+	padding: 12px 0px;
+}
+
+/* this styles the submenu links */
+#top-menu .sub-menu a {
+	line-height: 1.8em;
+	padding: 5px 10px;
+}
+
+#top-menu .sub-menu a:hover {
+	opacity: 1 !important;
+	color: #000 !important;
+}
+
+/* Subsubmenu hover color is Udacity blue */
+/* this styles the subsubmenu */
+#main-header .sub-menu .sub-menu {
+	background-color: #fff;
+	/*width: 275px;*/
+	box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+	/* Change top border color */
+	border-top: 3px solid #fff; 
+}
+
+/* this styles the subsubmenu's links */
+#top-menu .sub-menu .sub-menu a {
+	padding-right: 0% !important;
+	margin: 0 !important;
+}
+
+#top-menu .sub-menu .sub-menu a:hover {
+	color: #02b3e4 !important;
+}
+
+/* In Explore subsubmenu, style Nanodegree labels */
+#top-menu .menu-nanodegree-header a, .et-fixed-header #top-menu .menu-nanodegree-header a {
+	font-size: .6625rem;
+  letter-spacing: .125rem;       text-transform: uppercase;
+  font-weight: 600;
+}	
+
+/* Have Explore and Career links unclickable on hover, but still expand their dropdowns */
+/*.nolink > a:hover {
+  cursor: default;
+	color: inherit;
+}*/
+
+/* No hover event over nanodegree labels */
+.nohover {
+	pointer-events: none;
+  cursor: default;
+}
+
+/*
+ * 
+ * STYLE BUTTONS ON 
+ * DESKTOP NAV
+ * 
+*/
+@media only screen and (min-width: 980px) {
+/* Style blue button */
+.nav-blue-btn a {
+  color: white !important;
+  border: 2px solid #02b3e4;
+	padding: 4px 15px!important;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #02b3e4;
+}
+
+.nav-blue-btn a:hover {
+	opacity: 1 !important;
+}
+
+/* Blue btn text remain white on scroll down */
+.et-fixed-header #top-menu .nav-blue-btn a  {
+	color: #fff!important;
+}
+
+/* Blue button on hover */ 
+#main-header .sub-menu .deep-blue-hover a:hover {
+	border: 2px solid #388dbf;
+	background-color: #388dbf !important;
+	color: #fff !important;
+}
+
+/* spacing above Full Catalog btn under Explore */	
+#main-header .sub-menu .full-catalog-btn {
+	margin-top: 7px;
+}
+
+/* Shrink box shadow on hover */	
+.shrink-box-shadow a {
+	box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.2);
+	
+}	
+.shrink-box-shadow:hover a {
+	box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.35);
+}
+}
+/*
+ * 
+ * MOBILE MENU STYLES
+ * 
+ * */
+
 /* Different mobile logo */
-@media only screen and (max-width: 481px) {
+@media (max-width: 980px) {
  .et_show_nav #logo {
  content: url('/wp-content/uploads/2019/04/udacity-white-logo-mobile-1.png') !important;
  }
@@ -8,25 +133,67 @@
  }
 }
 
-/* Different border color */
-.et_mobile_menu { border-top: 3px solid rgb(26,34,42) !important; }
-
-
-/* Button Styles */
-.et_pb_button {
-	/*border-width: 11.5px;
-	letter-spacing: 0.13rem;
-	font-weight: 600;*/
+/* style the mobile submenu */
+.et_mobile_menu {
+	/* Change mobile menu border color */
+	border-top: 0px solid #232e38; 
+	/* Padding*/
+	padding: 1em 2em 1.3em 1em;
 }
 
-.button-white {
-	color: #02b3e4;
-	background: #ffffff;
-	border-color: #ffffff;
-	background-color: #ffffff;
+.et_mobile_menu li a:hover {
+	color: #efefef;
 }
 
-/* Timeline */
+/* Mobile menu standout links */
+.et_mobile_menu .mobile-menu-link-blue a {
+		color: rgb(65,164,220)
+}
+.et_mobile_menu .mobile-menu-link-turquoise a {
+		color: rgb(80,194,171) !important;
+}	
+
+/* Change mobile menu hamburger to X when opened */
+
+#main-header .et_mobile_menu .menu-item-has-children > a { 	
+	background-color: transparent; 
+	position: relative; }
+
+
+#main-header .et_mobile_menu .menu-item-has-children > a:after { 
+	font-family: 'ETmodules';
+	text-align: center; 
+	speak: none; 
+	font-weight: normal; 
+	font-variant: normal; 
+	text-transform: none; 
+	position: absolute; 
+}
+
+#main-header .et_mobile_menu .menu-item-has-children > a:after { 
+	font-size: 16px; 
+	content: '\4c'; 
+	top: 13px; 
+	right: 10px; 
+}
+
+#main-header .et_mobile_menu ul.sub-menu { 
+	display: none !important;
+	visibility: hidden !important;  
+	transition: all 1.5s ease-in-out;
+}
+
+#main-header .et_mobile_menu .visible > ul.sub-menu {
+	display: block !important;
+	visibility: visible !important; 
+}
+
+.mobile_nav.opened .mobile_menu_bar:before {
+	content: "\4d" !important;
+}
+
+
+/* Timeline for NDOP pages */
 .dots-list {
 width: 100%;
 }
@@ -78,16 +245,6 @@ content: "";
 background: #ffffff;
 }
 
-/* Balboa styling */
-.balboa {
-	font-family: balboa-extra-condensed, sans-serif !important;
-	font-weight: 400 !important;
-	text-align: left;
-  font-size: 60px;
-  line-height: 80px;
-	letter-spacing: 0 !important;
-}
-
 /* Blurb image svg size */
 .et_pb_blurb .et_pb_main_blurb_image {
 	width: 80px;
@@ -125,8 +282,6 @@ width: 25%!important;
 #et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before {
     content: '4d';
 }
-
-
 
 /* Heading styles */
 h1, h2 {
@@ -227,99 +382,46 @@ text-decoration-color: #02b3e4;
    display:none;
 }
 
-/* Have link unclickable on hover */
-.nolink > a:hover {
-  cursor: default;
-	color: inherit;
-}
-
-@media only screen and (min-width: 980px) {
-/* Nav button */
-#top-menu li a:hover {opacity: 1!important;}
-             
-.nav-blue-btn a {
-	color: white!important;
-  border: 2px solid #02b3e4!important;
-  padding: 12px!important;
-  border-radius: 6px;
-  text-align: center;
-  background-color: #02b3e4;
-}
- 
-.nav-blue-btn a:hover {
-	border: 2px solid #388dbf!important;
-	background-color: #388dbf !important;
-  color: white!important;
-	opacity: 1;
-}
-
-.full-catalog-btn {
-	margin-top: 11px !important;
-}
-
-/* White on scroll down */
-.et-fixed-header #top-menu .nav-blue-btn a  {
-	color: #fff!important;
-}
-}
-
-/* Mobile menu standout links */
-@media (max-width: 980px) {
-	.mobile-menu-link-blue a {
-		color: rgb(65,164,220) !important;
-	}
-	.mobile-menu-link-turquoise a {
-		color: rgb(80,194,171) !important;
-	}	
-}
-
-/* Navbar font format */
-#top-menu li a {
-	font-size: 0.875rem !important;
-	font-weight: 400 !important;
-	color: #525c5c;
-}
-
-/* Change mobile menu hamburger to X when opened */
-
-#main-header .et_mobile_menu .menu-item-has-children > a { 	
-	background-color: transparent; 
-	position: relative; }
-
-
-#main-header .et_mobile_menu .menu-item-has-children > a:after { 
-	font-family: 'ETmodules';
-	text-align: center; 
-	speak: none; 
-	font-weight: normal; 
-	font-variant: normal; 
-	text-transform: none; 
-	position: absolute; 
-}
-
-#main-header .et_mobile_menu .menu-item-has-children > a:after { 
-	font-size: 16px; 
-	content: '\4c'; 
-	top: 13px; 
-	right: 10px; 
-}
-
-#main-header .et_mobile_menu ul.sub-menu { 
-	display: none !important;
-	visibility: hidden !important;  
-	transition: all 1.5s ease-in-out;
-}
-
-#main-header .et_mobile_menu .visible > ul.sub-menu {
-	display: block !important;
-	visibility: visible !important; 
-}
-
-.mobile_nav.opened .mobile_menu_bar:before {
-	content: "\4d" !important;
-}
-
 /* #top-menu .nav-divider a:after {
 	border-right: 2px solid #051727;
 	padding:0px 1em 0px 1em!important;
 }*/
+
+/* inline buttons for mobile fullwidth;*/
+@media only screen and (max-width: 650px) {
+.et_pb_fullwidth_header .et_pb_fullwidth_header_container .et_pb_button_two {
+margin-left: 0;
+}
+}
+
+/* inline buttons for mobile banner;  used in "right path banner" */
+.btn-inline .et_pb_button_module_wrapper {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* mobile stacking */
+@media (max-width: 980px) {
+.flex-columns .et_pb_row {
+  display: flex; }
+.flex-columns.twobytwo .et_pb_row {
+  display: flex; }
+.flex-columns.twobytwo .et_pb_row {
+  flex-wrap: wrap; }
+.flex-columns.twobytwo .et_pb_row .et_pb_column {
+  width: 50% !important; } 
+}
+@media (max-width: 479px) {
+.flex-columns.twobytwo .et_pb_row {
+  flex-wrap: wrap; } 
+.flex-columns.twobytwo .et_pb_row .et_pb_column {
+  width: 50% !important; }
+}
+
+.arrow-right :after {
+	content: "\24";
+	font-size: 1.2em;
+	padding-left: 5px;
+	position:relative;
+	font-family: 'ETmodules';
+}
