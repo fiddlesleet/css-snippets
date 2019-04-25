@@ -485,7 +485,7 @@ margin-left: 0;
   }
 	/* Margin between stacked buttons, so they don't sit directly atop each other */
 	.btn-inline .et_pb_button_module_wrapper:first-of-type {
-		margin-bottom: 5% !important;
+		margin-bottom: 5%;
 	}
 }
 
