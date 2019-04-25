@@ -483,4 +483,12 @@ margin-left: 0;
   .btn-inline .et_pb_button {
     text-align: center !important;
   }
+	/* Margin between stacked buttons, so they don't sit directly atop each other */
+	.btn-inline .et_pb_button_module_wrapper:first-of-type {
+		margin-bottom: 5% !important;
+	}
+}
+
+/* Footer social icons */ .footer-social-icons a {
+	padding-right: 1.4em;
 }
