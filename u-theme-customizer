@@ -29,6 +29,36 @@
  * 
  * */
 @media (min-width: 980px) {
+	
+/* Dropdown icons */
+#top-menu .menu-item-has-children > a:after { 
+	font-family: 'ETmodules';
+	text-align: center; 
+	speak: none; 
+	font-weight: normal; 
+	font-variant: normal; 
+	text-transform: none; 
+	position: absolute; 
+}
+
+#top-menu .menu-item-has-children > a:after { 
+	font-size: 18px !important; 
+	content: '\43' !important; 
+	top: 13px; 
+	right: 10px; 
+	/* dark grey */
+	color: #414a52; 
+}
+	
+#top-menu .menu-item-has-children .menu-item-has-children > a:after { 
+	font-size: 18px !important; 
+	content: '\35' !important; 
+	top: 13px; 
+	right: 10px; 
+	/* dark grey */
+	color: #414a52; 
+}	
+	
 /* Navbar font format */
 /* this styles the navbar links as a whole */
 #top-menu li a, .et-fixed-header #top-menu li a  {
