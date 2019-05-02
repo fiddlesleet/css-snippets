@@ -1,4 +1,3 @@
-<script>
 // Set the date we're counting down to
 function countdownDays(date) { 
   var countDownDate = new Date(date + " 23:59:59").getTime();
@@ -27,4 +26,3 @@ function countdownDays(date) {
 };
   
 countdownDays("May 15, 2019");
-</script>
