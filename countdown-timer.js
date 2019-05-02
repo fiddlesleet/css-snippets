@@ -1,6 +1,3 @@
-<!-- Display the countdown timer in an element -->
-<h5 class="countdown-days"></h5>
-
 <script>
 // Set the date we're counting down to
 function countdownDays(date) { 
