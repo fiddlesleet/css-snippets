@@ -1,6 +1,9 @@
+// THIS FUNCTION COUNTS DOWN THE DAYS UNTIL NANODEGREE ENROLLMENT CLOSES.
+// USAGE: ALL SCHOOL PAGES
+
 // Set the date we're counting down to
 function countdownDays(date) { 
-  var countDownDate = new Date(date + " 23:59:59").getTime();
+  var countDownDate = new Date(date + " 00:00:00").getTime();
 
 	// Update the count down every 1 second
 	var x = setInterval(function() {
@@ -14,15 +17,13 @@ function countdownDays(date) {
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
-  // Display the result in the element with id="demo"
+  // Display the result in the element with class="countdown-days"
   document.querySelector(".countdown-days").innerHTML = days + " days left to enroll";
 
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.querySelector(".countdown-days").innerHTML = "EXPIRED";
+    document.querySelector(".countdown-days").innerHTML = "Enrollment Closed";
   }
-}, 1000);
+}, 60000);
 };
-  
-countdownDays("May 15, 2019");
