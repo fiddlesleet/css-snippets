@@ -196,6 +196,10 @@ border-right: 0px solid #d9d9d9;
   transform: rotate(180deg);
 }
 
+/* Make accordion title bold on open*/
+.et_pb_toggle_open .et_pb_toggle_title {
+  font-weight: 800;
+}
 /* 
 * TOGGLE CONTENT STYLING 
 */
