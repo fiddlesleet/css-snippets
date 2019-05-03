@@ -181,9 +181,9 @@ border-right: 0px solid #d9d9d9;
 * ACCORDION STYLING
 */
 
-/* Remove padding around content */
-.et_pb_toggle_close {
-  padding: 2.8% 0px;
+/* Remove padding around content, so it aligns with accordion border lines */
+.et_pb_toggle_close, .et_pb_toggle_open {
+  padding: 1.7rem 0.5rem 1.7rem 0rem;
 }
 
 
