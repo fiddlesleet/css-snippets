@@ -180,17 +180,20 @@ border-right: 0px solid #d9d9d9;
 /* 
 * ACCORDION STYLING
 */
-/* Change accordion icon */
-.et_pb_toggle_closed.et_pb_toggle_title:before {
-	content: "\43";
-  font-size: 1.8rem !important;
+
+/* Hide content title */
+@media (max-width: 982px) {
+  .path-title {
+    display: none;
+  }
 }
 
-/* Make accordion togglable*/
+/* Add "close" toggle icon */
 .et_pb_toggle_open .et_pb_toggle_title:before {
 	display: block !important;
-	content: "\42";
-  font-size: 1.8rem !important;
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* 
