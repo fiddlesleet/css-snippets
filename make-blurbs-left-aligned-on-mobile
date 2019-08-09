@@ -1,0 +1,17 @@
+/* 
+* Make blurb images/icons left aligned for mobile 
+*
+*/
+.et_pb_main_blurb_image {
+  width: 30px;
+  margin-right: 2.1em;
+}
+.et_pb_blurb_content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+.et_pb_module_header {
+  padding-bottom: 0px;
+  margin-top: 0.35em !important;
+}
